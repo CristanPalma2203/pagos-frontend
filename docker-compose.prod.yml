@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+  pagos-frontend-prod:
+    container_name: pagos-frontend-prod
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - '80:80'
